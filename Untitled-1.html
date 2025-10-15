@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- HTML：野种文艺逼 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有关野种文艺逼的评判标准</title>
+    <style>
+        body {
+            font-family: '微软行书', Arial, sans-serif;
+            background-color: rgb(50, 21, 176);
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: rgb(230, 15, 126);
+            text-align: center;
+        }
+        .box {
+            background-color: rgb(12, 167, 240);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(83, 25, 134, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        button {
+            background-color: rgb(239, 10, 208);
+            color: white;
+            border: none;
+            padding: 90px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #980c9dff;
+        }
+    </style>
+</head>
+<body>
+    <img src="1212.jpg" alt="赵颖">
+    <h1>欢迎!</h1>
+    <div class="box">
+        <p>这个页面展示了成为文艺逼三大核心技术的结合使用。</p>
+        <button id="clickBtn">Click Me！</button>
+    </div>
+    
+    <!-- JavaScript：定义计算机大神的行为和交互 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('clickBtn');
+            let clickCount = 0;
+            
+            button.addEventListener('click', function() {
+                clickCount++;
+                if (clickCount === 1) {
+                    alert('Hello, 阴湿文艺宝宝! 欢迎开始你的文艺逼开发之旅');
+                } else if (clickCount === 2) {
+                    alert('抽烟是文艺逼的骨架，喝酒是文艺逼的皮肤，读诗写诗是文艺逼的灵魂！');
+                } else if (clickCount === 3) {
+                    alert('继续探索，你会发现作为文艺逼被地球online开发的更多乐趣！');
+                } else {
+                    alert('你已经点击了' + clickCount + '次按钮！看来你对成为最强文艺逼很感兴趣呢！');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

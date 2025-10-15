@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- HTML：纯情小猫咪,网站结构与命名 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纯情小猫咪</title>
+    <!-- 网站字体背景颜色等设定-->
+  <style>
+
+        body {
+            font-family: '微软雅黑';
+            background-color: rgba(255, 3, 255, 0.724);
+        }
+        
+        h1 {
+            color: rgba(255, 0, 166, 0.906);
+            text-align: start;
+        }
+        .box {
+            height:1000px;
+            background-image: url(1515.jpg);
+        }
+        img {
+            width:333px
+        }
+        .box {
+            background-color: rgb(12, 167, 240);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(83, 25, 134, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        button {
+            background-color: rgb(214, 7, 255);
+            color: white;
+            border: none;
+            padding: 90px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: rgb(223, 213, 9);
+        }
+        h2 {
+            color: rgb(239, 31, 131);
+        }
+    </style>
+</head>
+<body>
+    <h1><i>!!!!!纯情小猫咪（喵喵喵喵喵---）欢迎你!!!!!很高兴你点进这个website请在下方点击按钮投
+        喂我或者微信扫码投喂今日已经购买我的人吧！</i></h1>
+    <!--背景图片-->
+      
+   <div class="box">
+        <p>来投喂我吧</p>
+        <img src="1313.jpg">
+        <button id="clickBtn">Click Me！</button>
+       
+    </div>
+
+    <!-- JavaScript：定义计算机大神的行为和交互 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('clickBtn');
+            let clickCount = 0;
+            
+            button.addEventListener('click', function() {
+                clickCount++;
+                if (clickCount === 1) {
+                    alert('你好呀，快投喂我我好饿');
+                } else if (clickCount === 2) {
+                    alert('点点点快快快！');
+                } else if (clickCount === 3) {
+                    alert('继续点击，你会发现投喂小猫咪更多乐趣！');
+                } else {
+                    alert('快扫码投喂我主人，快扫码投喂我主人，快扫码投喂我主人');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
