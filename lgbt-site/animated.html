@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGBT 彩虹动画页面</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .rainbow {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #e40303 0 16.6%,
+                #ff8c00 16.6% 33.2%,
+                #ffed00 33.2% 49.8%,
+                #008026 49.8% 66.4%,
+                #004dff 66.4% 83%,
+                #750787 83% 100%
+            );
+            margin: 40px auto 20px auto;
+            animation: spin 4s linear infinite;
+            box-shadow: 0 0 40px 10px #e1bee7;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .rainbow-text {
+            font-size: 2.2rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="rainbow-text fade-in">LGBT 彩虹动画页面</h1>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="about.html">关于我们</a>
+            <a href="resources.html">资源推荐</a>
+            <a href="animated.html">彩虹动画</a>
+        </nav>
+    </header>
+    <main>
+        <div class="rainbow fade-in"></div>
+        <section style="text-align:center; margin-top:30px;" class="fade-in">
+            <h2>多元 · 包容 · 骄傲</h2>
+            <p>彩虹象征着LGBT群体的多样性与团结。<br>让我们一起为平等和尊重发声！</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 LGBT 友好社区</p>
+    </footer>
+</body>
+</html>
